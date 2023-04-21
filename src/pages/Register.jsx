@@ -53,6 +53,8 @@ const Register = () => {
         <form onSubmit={submithandler}>
           <input
             type="text"
+            name="text"
+            autoComplete="on"
             placeholder="Name"
             value={userDetail.name}
             onChange={(e) => {
@@ -62,6 +64,8 @@ const Register = () => {
           />
           <input
             type="email"
+            name="email"
+            autoComplete="on"
             placeholder="Email"
             value={userDetail.email}
             onChange={(e) => {
@@ -71,6 +75,8 @@ const Register = () => {
           />
           <input
             type="password"
+            name="password"
+            autoComplete="on"
             placeholder="Password"
             value={userDetail.password}
             onChange={(e) => {

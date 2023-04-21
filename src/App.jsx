@@ -27,15 +27,17 @@ function App() {
       .then((res) => {
         setisAuthenticated(true);
         setisLoader(false);
+        console(res.data.message);
       })
       .catch((error) => {
+        window.alert("Login First to Use App");
         setisAuthenticated(false);
         setUser({});
         setisLoader(false);
       });
   }, []);
   // setNoOfTask(Tasks.length);
-  console.log(Tasks.length)
+  // console.log(Tasks.length);
   return (
     <div>
       <Context.Provider

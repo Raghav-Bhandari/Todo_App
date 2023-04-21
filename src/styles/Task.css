@@ -35,3 +35,12 @@
   font-size: 1rem;
   font-weight: 200;
 }
+
+@media (max-width: 500px) {
+  .task {
+    flex-direction: column;
+  }
+  .task-updater {
+    align-self: flex-start;
+  }
+}

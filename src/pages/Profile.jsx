@@ -4,7 +4,7 @@ import { Bars } from "react-loader-spinner";
 import "../styles/Profile.css";
 import { Navigate } from "react-router-dom";
 import axios from "axios";
-const Profile = ({taskn}) => {
+const Profile = ({ taskn }) => {
   const {
     User,
     setUser,
@@ -25,6 +25,7 @@ const Profile = ({taskn}) => {
         setisLoader(false);
       })
       .catch((error) => {
+        // console.log(error.response.data.message);
         setisAuthenticated(false);
         setUser({});
         setisLoader(false);

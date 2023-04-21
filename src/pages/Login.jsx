@@ -46,6 +46,8 @@ const Login = () => {
         <form onSubmit={submithandler}>
           <input
             type="email"
+            name="email"
+            autoComplete="on"
             placeholder="Email"
             value={userDetail.email}
             onChange={(e) => {
@@ -55,6 +57,8 @@ const Login = () => {
           />
           <input
             type="password"
+            name="password"
+            autoComplete="on"
             placeholder="Password"
             value={userDetail.password}
             onChange={(e) => {
@@ -69,7 +73,7 @@ const Login = () => {
               "Login"
             )}
           </button>
-          <span>Or</span>
+          <span>Or If New User</span>
           <Link to={"/register"}>Sign Up</Link>
         </form>
       </section>

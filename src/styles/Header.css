@@ -7,10 +7,14 @@
   top: 0;
   color: white;
 }
-.header > div > a {
+
+.header > div > a > span {
   text-transform: uppercase;
   color: white;
   font-weight: 500;
+}
+.header > div > a > span:nth-child(2) {
+  display: none;
 }
 .header > article {
   display: flex;
@@ -31,4 +35,25 @@
 .header > article > .btn {
   height: 100%;
   border: none;
+}
+
+@media (max-width: 500px) {
+  .header {
+    font-size: 1.3rem;
+    gap: 2rem;
+    padding: 0.5rem 2rem;
+  }
+  .header > article > a {
+    padding: 0 1rem;
+  }
+  .header > article > .btn {
+    padding: 0 1rem;
+    font-size: 1.3rem;
+  }
+  .header > div > a > span:nth-child(1) {
+    display: none;
+  }
+  .header > div > a > span:nth-child(2) {
+    display: inline-block;
+  }
 }

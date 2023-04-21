@@ -25,7 +25,10 @@ const Header = () => {
   return (
     <nav className="header">
       <div>
-        <Link to={"/"}>Todo App</Link>
+        <Link to={"/"}>
+          <span>Todo App</span>
+          <span>Todo</span>
+        </Link>
       </div>
       <article>
         <Link to={"/home"}>Home</Link>
