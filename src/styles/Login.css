@@ -1,0 +1,59 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+
+  /* align-items: center; */
+  gap: 2rem;
+}
+.login > span {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #343334;
+  text-transform: uppercase;
+}
+.login > section {
+  margin-bottom: 5rem;
+}
+.login > section > form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 1rem;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+.login > section > form > input {
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  background-color: white;
+  color: #343334;
+  /* font-size: 2rem; */
+  padding: 1rem;
+  margin: 1rem 0rem;
+  font-weight: 400;
+}
+
+.login > section > form > .btn {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  font-size: 1.6rem;
+}
+.login > section > form > span {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.login > section > form > a {
+  font-weight: 400;
+  width: fit-content;
+  align-self: center;
+  font-size: 1.3rem;
+}
+
+.login > section > form > a:hover {
+  text-decoration: underline;
+}

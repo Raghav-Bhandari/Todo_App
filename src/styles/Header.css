@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 3rem;
+  background-color: #343334;
+  position: sticky;
+  top: 0;
+  color: white;
+}
+.header > div > a {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 500;
+}
+.header > article {
+  display: flex;
+  align-items: center;
+  /* gap: 1rem; */
+}
+.header > article > a {
+  text-transform: uppercase;
+  color: white;
+  padding: 0 3rem;
+  font-weight: 200;
+}
+.header > article > a:hover {
+  background-color: white;
+  color: #343334;
+  font-weight: 400;
+}
+.header > article > .btn {
+  height: 100%;
+  border: none;
+}

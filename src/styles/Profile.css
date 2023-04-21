@@ -1,0 +1,20 @@
+.profile {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile > .task-form {
+  max-width: 400px;
+  width: 70%;
+}
+.profile > .task-form > div {
+  display: flex;
+  justify-content: flex-start;
+}
+.profile > .task-form > div > h3 {
+  width: 50%;
+}
+.profile > .task-form > div > span {
+  width: 50%;
+}
